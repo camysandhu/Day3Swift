@@ -35,20 +35,24 @@
 //s1.printData()
 
 
-var f1 = Faculity()
-
-f1.faculityId = 4000
+var f1 = Faculity(facuiltyId: 1, firstName: "Raman", lastName: "Dhillon")
+f1.faculityId = 1234
 f1.faculityname = "Camy"
 f1.firstName = "Harmanpreet"
 f1.lastName = "Singh"
 f1.basicSalary = 200
 f1.bonus = 10
-
-
-f1.calcSalary()
+f1.calculateTotalSalary()
 f1.printData()
 
 
+var s1 = Student(studentId: 1, studentName: "Camy", marks: ["m1":50.0, "m2":60.0, "m3":55.0, "m4":75.0, "m5":50.0])
+
+s1.calculateTotal()
+s1.calculatepercentage()
+s1.calculateResult()
+
+s1.printData()
 //var s2 = s1
 
 //s1.studentID = 200
