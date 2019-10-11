@@ -41,6 +41,7 @@ struct Student
     
     mutating func calculatepercentage()
     {
+        
         self.percentage = self.total / Float(self.marks.count)
     }
     

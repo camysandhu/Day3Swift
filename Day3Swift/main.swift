@@ -34,7 +34,7 @@
 //var s1 = Student(studentID: 1, studentName: "Student 1")
 //s1.printData()
 
-
+//Faculity
 var f1 = Faculity(facuiltyId: 1, firstName: "Raman", lastName: "Dhillon")
 f1.faculityId = 1234
 f1.faculityname = "Camy"
@@ -43,9 +43,23 @@ f1.lastName = "Singh"
 f1.basicSalary = 200
 f1.bonus = 10
 f1.calculateTotalSalary()
-f1.printData()
+
+//Faculity
+var f2 = Faculity(faculityId: 2,faculityname: "abc", firstName: "Ramandeep", lastName: "Dhillon"
+    ,basicSalary : 5000, bonus : 200)
+var faculities = Dictionary<Int, Faculity>()
+faculities.updateValue(f1, forKey: f1.faculityId!)
+faculities.updateValue(f2, forKey: f2.faculityId!)
+for f in faculities
+{
+    f.value.printData()
+    print("----------")
+}
 
 
+
+
+//Student
 var s1 = Student(studentId: 1, studentName: "Camy", marks: ["m1":50.0, "m2":60.0, "m3":55.0, "m4":75.0, "m5":50.0])
 
 s1.calculateTotal()

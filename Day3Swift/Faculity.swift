@@ -16,6 +16,7 @@ class Faculity
        // self.faculityname = faculityname
         self.firstName = firstName
         self.lastName = lastName
+       
         
     }
     convenience init(facuiltyId: Int,firstName: String, lastName: String)
