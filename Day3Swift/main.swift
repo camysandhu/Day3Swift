@@ -45,8 +45,7 @@ f1.bonus = 10
 f1.calculateTotalSalary()
 
 //Faculity
-var f2 = Faculity(faculityId: 2,faculityname: "abc", firstName: "Ramandeep", lastName: "Dhillon"
-    ,basicSalary : 5000, bonus : 200)
+var f2 = Faculity(facuiltyId: 2, firstName: "Ramandeep", lastName: "Dhillon5")
 var faculities = Dictionary<Int, Faculity>()
 faculities.updateValue(f1, forKey: f1.faculityId!)
 faculities.updateValue(f2, forKey: f2.faculityId!)

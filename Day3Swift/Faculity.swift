@@ -4,9 +4,27 @@ class Faculity
     var faculityname: String?
     var firstName: String?
     var lastName: String?
+    var fullName: String
+    {
+        get
+        {
+           return "\(self.firstName!) \(self.lastName!)"
+        }
+    }
     var basicSalary: Float?
     var bonus: Float?
-    var totalSalary: Float?
+    var comm: Float = 0.0
+    var totalSalary: Float
+    
+    {
+        get{
+            return basicSalary! + (basicSalary! * comm / 100)
+        }
+        set(nComm)
+        {
+            comm = nComm
+        }
+    }
     
    
     convenience init( faculityId: Int,faculityname: String,firstName: String,lastName: String,basicSalary: Float,bonus:Float)
@@ -55,7 +73,7 @@ class Faculity
     
    func printData()
     {
-        print(faculityId!, faculityname!, firstName!,lastName!,basicSalary!,bonus!,totalSalary!)
+        print(faculityId!, faculityname!, firstName!,lastName!,basicSalary!,bonus!,totalSalary)
 
 }
 }
